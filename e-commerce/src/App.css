@@ -1,0 +1,133 @@
+/* Utilities*/
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
+
+.linkUp {
+  color: black;
+  font-size: 2rem;
+  position: fixed;
+  bottom: 15px;
+  right: -0px;
+  text-align: center;
+  transition: 2s;
+}
+
+.linkUp:hover {
+  color: rgb(84, 217, 251) !important;
+  background-color: black;
+  border-radius: 50%;
+}
+
+/* Navbar */
+
+.textN {
+  color: rgb(84, 217, 251) !important;
+}
+
+.imgNav {
+  animation: App-logo-spin infinite 8s linear;
+  width: 35px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Title Login/Register */
+
+.titleDiv {
+  background-color: rgb(23, 142, 142);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  border-radius: 35px 70px;
+  box-shadow: 2px 3px 30px black;
+}
+
+.titleDiv h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 0.6rem;
+}
+
+/*
+  PAGE ADMIN
+*/
+
+.componentsTitles {
+  background-color: rgb(223, 219, 219);
+  color: black;
+  padding: 0.2em;
+  border-radius: 10px;
+}
+
+/* Table Product*/
+
+.tablePage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fixTableHead thead th {
+  color: rgb(84, 217, 251) !important;
+  position: sticky;
+  top: 0;
+}
+
+.btnTd {
+  width: 20%;
+  text-align: center;
+}
+
+/*
+  PAGE USERS
+*/
+
+.imgCarousel {
+  width: 900px;
+  height: 350px;
+}
+
+/* card product */
+.card {
+  box-shadow: 1px 3px 10px black;
+}
+
+.cardTitle {
+  text-align: center;
+  background-color: black !important;
+  color: rgb(243, 227, 8) !important;
+  font-size: 2rem;
+  margin: 0.6em;
+  border-radius: 4px !important;
+}
+
+.textC {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* UPDATE */
+
+.labelUpdate {
+  color: rgb(0, 174, 255);
+  width: 21em;
+  text-align: center;
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 2px;
+  font-weight: 700;
+  margin-top: 0.7em;
+}
