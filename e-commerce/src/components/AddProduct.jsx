@@ -8,6 +8,7 @@ export default function AddProduct({ addP }) {
 
     return (
         <>
+        //Add
             <h2 className='mt-5 componentsTitles'>Add product on e-commerce</h2>
             <Formik
                 initialValues={{
