@@ -80,7 +80,7 @@ body {
 
 .fixTableHead thead th {
   color: rgb(84, 217, 251) !important;
-  position: sticky;
+  position: sticky !important;
   top: 0;
 }
 

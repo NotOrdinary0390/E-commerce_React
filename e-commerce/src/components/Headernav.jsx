@@ -8,7 +8,7 @@ import logo from '../img/logo.svg'
 export default function Headernav() {
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='sticky-lg-top'>
                 <Container>
                     <Navbar.Brand href="#" className='textN'>
                         <img
