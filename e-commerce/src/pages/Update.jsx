@@ -41,24 +41,28 @@ export default function Update() {
         Edit Product:
         <span style={{ color: 'black' }}> {selectedProduct.name}</span>
       </h1>
-      <div>
-      <img style={{ width: '250px' }}src={selectedProduct.imageUrl} ></img>
-      </div>
 
       <Form>
-        <Row className="mb-3">
-          <Form.Group as={Col} controlId="formGridEmail">
-            <Form.Label className='labelUpdate'>ID</Form.Label>
-            <Form.Control type="number" placeholder={selectedProduct.id} />
-          </Form.Group>
+        <div className='d-flex justify-content-between'>
+          <img style={{ maxHeight: '300px', maxWidth: '340px' }} src={selectedProduct.imageUrl} ></img>
+          <Row className="mb-3 w-50">
+            <Form.Group as={Col} controlId="formGridEmail">
+              <Form.Label className='labelUpdate'>ID</Form.Label>
+              <Form.Control type="number" placeholder={selectedProduct.id} />
+            </Form.Group>
 
-          <Form.Group as={Col} controlId="formGridCity">
-            <Form.Label className='labelUpdate'>NAME</Form.Label>
-            <Form.Control placeholder={selectedProduct.name} />
-          </Form.Group>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label className='labelUpdate'>NAME</Form.Label>
+              <Form.Control placeholder={selectedProduct.name} />
+            </Form.Group>
 
+            <Form.Group as={Col} controlId="formGridZip">
+              <Form.Label className='labelUpdate'>RATE</Form.Label>
+              <Form.Control type="number" placeholder={selectedProduct.price + '.00 €'} />
+            </Form.Group>
+          </Row>
 
-        </Row>
+        </div>
 
         <Form.Group className="mb-3" controlId="formGridAddress1">
           <Form.Label className='labelUpdate'>DESCRIPTION</Form.Label>
@@ -71,11 +75,6 @@ export default function Update() {
         </Form.Group>
 
         <Row className="mb-3">
-          <Form.Group as={Col} controlId="formGridCity">
-            <Form.Label className='labelUpdate'>QTA</Form.Label>
-            <Form.Control type="number" placeholder={selectedProduct.qta} />
-          </Form.Group>
-
           <Form.Group as={Col} controlId="formGridState">
             <Form.Label className='labelUpdate'>categoria id</Form.Label>
             <Form.Select type="number" defaultValue={selectedProduct.categoriaId}>
@@ -84,14 +83,9 @@ export default function Update() {
             </Form.Select>
           </Form.Group>
 
-          <Form.Group as={Col} controlId="formGridPassword">
-            <Form.Label className='labelUpdate'>PRICE</Form.Label>
-            <Form.Control type="number" placeholder={selectedProduct.price +".00 €"} />
-          </Form.Group>
-
-          <Form.Group as={Col} controlId="formGridZip">
-            <Form.Label className='labelUpdate'>RATE</Form.Label>
-            <Form.Control type="number" placeholder={selectedProduct.rate} />
+          <Form.Group as={Col} controlId="formGridCity">
+            <Form.Label className='labelUpdate'>QTA</Form.Label>
+            <Form.Control type="number" placeholder={selectedProduct.qta} />
           </Form.Group>
         </Row>
 
