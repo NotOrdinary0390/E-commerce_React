@@ -6,7 +6,6 @@ import { Form, Row, Col, Button } from 'react-bootstrap';
 export default function Update() {
 
   const [selectedProduct, setSelectedProduct] = useState({});
-  //const [detailProduct, setDetailProduct] = useState(null);
 
   const navigate = useNavigate();
 
@@ -14,11 +13,10 @@ export default function Update() {
     const product = localStorage.getItem('selectedProduct');
     if (product) {
       setSelectedProduct(JSON.parse(product));
-      console.log(product)
+      //console.log(product)
     }
   }, []);
-
-  console.log(selectedProduct)
+  //console.log(selectedProduct)
 
   // useEffect(() => {
   //   if (detailProduct && detailProduct.id) {
@@ -43,17 +41,20 @@ export default function Update() {
         Edit Product:
         <span style={{ color: 'black' }}> {selectedProduct.name}</span>
       </h1>
+      <div>
+      <img style={{ width: '250px' }}src={selectedProduct.imageUrl} ></img>
+      </div>
 
       <Form>
         <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridEmail">
             <Form.Label className='labelUpdate'>ID</Form.Label>
-            <Form.Control type="number" placeholder="Enter id" />
+            <Form.Control type="number" placeholder={selectedProduct.id} />
           </Form.Group>
 
           <Form.Group as={Col} controlId="formGridCity">
             <Form.Label className='labelUpdate'>NAME</Form.Label>
-            <Form.Control placeholder="name prod" />
+            <Form.Control placeholder={selectedProduct.name} />
           </Form.Group>
 
 
@@ -61,23 +62,23 @@ export default function Update() {
 
         <Form.Group className="mb-3" controlId="formGridAddress1">
           <Form.Label className='labelUpdate'>DESCRIPTION</Form.Label>
-          <Form.Control placeholder="description" />
+          <Form.Control placeholder={selectedProduct.description} />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formGridAddress2">
           <Form.Label className='labelUpdate'>image Url</Form.Label>
-          <Form.Control placeholder="image Url" />
+          <Form.Control placeholder={selectedProduct.imageUrl} />
         </Form.Group>
 
         <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridCity">
             <Form.Label className='labelUpdate'>QTA</Form.Label>
-            <Form.Control type="number" placeholder="qta" />
+            <Form.Control type="number" placeholder={selectedProduct.qta} />
           </Form.Group>
 
           <Form.Group as={Col} controlId="formGridState">
             <Form.Label className='labelUpdate'>categoria id</Form.Label>
-            <Form.Select type="number" defaultValue="Choose...">
+            <Form.Select type="number" defaultValue={selectedProduct.categoriaId}>
               <option>1</option>
               <option>2</option>
             </Form.Select>
@@ -85,12 +86,12 @@ export default function Update() {
 
           <Form.Group as={Col} controlId="formGridPassword">
             <Form.Label className='labelUpdate'>PRICE</Form.Label>
-            <Form.Control type="number" placeholder="price €" />
+            <Form.Control type="number" placeholder={selectedProduct.price +".00 €"} />
           </Form.Group>
 
           <Form.Group as={Col} controlId="formGridZip">
             <Form.Label className='labelUpdate'>RATE</Form.Label>
-            <Form.Control type="number" placeholder="rate" />
+            <Form.Control type="number" placeholder={selectedProduct.rate} />
           </Form.Group>
         </Row>
 

@@ -13,7 +13,7 @@ export default function Signin() {
 
   const navigate = useNavigate();
   const loginUser = (obj) => {
-    console.log(obj);
+    //console.log(obj);
     axios.post('http://localhost:3000/login', obj)
       .then((response) => {
         console.log(response.data);
@@ -26,30 +26,6 @@ export default function Signin() {
       })
       .catch(error => setError(error.response.user.data));
   }
-  // const loginUser = () => {
-  //   setError(null);
-  //   if (email && password) {
-  //     console.log(password)
-  //     axios.post('http://localhost:3000/login', { email: 'aaa@a.com', password: 'password' })
-  //       .then(res => {
-  //         console.log(res.data);
-  //         if ( res.data.email === email && res.data.password === password ) {
-  //           localStorage.setItem('userLogin',res.data.id)
-  //           if (res.data.admin == true) {
-  //             navigate('/admin');
-  //           } else {
-  //             navigate('/users');
-  //           }
-
-  //         }else{
-  //           setError("Invalid Credentials")
-  //         }
-  //       })
-  //       .catch(error => setError(error.res.data))
-  //   } else {
-  //     setError("Please fill Email and Password")
-  //   }
-  // }
 
   return (
     <>
