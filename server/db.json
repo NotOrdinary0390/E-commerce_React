@@ -56,7 +56,7 @@
   "products": [
     {
       "id": 25,
-      "name": "Consequatur",
+      "name": "vinyl",
       "price": 152,
       "categoryId": 2,
       "rate": 1.74,
@@ -66,7 +66,7 @@
     },
     {
       "id": 1,
-      "name": "Nulla",
+      "name": "iphone",
       "price": 207,
       "categoryId": 1,
       "rate": 2.44,
@@ -86,7 +86,7 @@
     },
     {
       "id": 3,
-      "name": "Minus",
+      "name": "Samsung phone",
       "price": 295,
       "categoryId": 1,
       "rate": 0.91,
@@ -96,7 +96,7 @@
     },
     {
       "id": 4,
-      "name": "Qui",
+      "name": "aipods apple",
       "price": 280,
       "categoryId": 1,
       "rate": 3.11,
@@ -126,8 +126,8 @@
     },
     {
       "id": 7,
-      "name": "Quos",
-      "price": 247,
+      "name": "MacBook Air Pro",
+      "price": "2470",
       "categoryId": 1,
       "rate": 4.74,
       "description": "Error voluptate recusandae reiciendis adipisci nec",
@@ -146,7 +146,7 @@
     },
     {
       "id": 9,
-      "name": "Nemo",
+      "name": "Electric guitar Fender",
       "price": 1430,
       "categoryId": 2,
       "rate": 4.06,
@@ -156,7 +156,7 @@
     },
     {
       "id": 10,
-      "name": "Quo",
+      "name": "Tv",
       "price": 150,
       "categoryId": 1,
       "rate": 3.07,
@@ -186,7 +186,7 @@
     },
     {
       "id": 13,
-      "name": "Hic",
+      "name": "Canon printer",
       "price": 178,
       "categoryId": 1,
       "rate": 4.83,
@@ -226,7 +226,7 @@
     },
     {
       "id": 17,
-      "name": "Facilis",
+      "name": "tennis bracelet red rubies",
       "price": 1300,
       "categoryId": 4,
       "rate": 0.64,
@@ -256,11 +256,11 @@
     },
     {
       "id": 20,
-      "name": "tuta colmar",
+      "name": "COLMAR ski suit",
       "price": 374,
       "categoryId": 5,
       "rate": 3.97,
-      "description": "tuta sci donna ",
+      "description": "ski suit woman",
       "qta": 68,
       "imageUrl": "https://www.colmar.com/dw/image/v2/BDNR_PRD/on/demandware.static/-/Sites-colmar-master-catalog/default/dwf9f1ab79/images/8033129800499---93345WUIN2299-I-AR-N-R-2-N.jpg?sw=832&sh=1147"
     },
@@ -276,7 +276,7 @@
     },
     {
       "id": 22,
-      "name": "Voluptas",
+      "name": "consolle",
       "price": 278,
       "categoryId": 1,
       "rate": 1.86,
@@ -286,17 +286,17 @@
     },
     {
       "id": 23,
-      "name": "Repellendus",
+      "name": "record player TECHNICS",
       "price": 285,
       "categoryId": 2,
       "rate": 4.46,
       "description": "Alias maiores soluta ab earum asperiores praesenti",
       "qta": 177,
-      "imageUrl": "https://www.google.it/url?sa=i&url=https%3A%2F%2Fit.dreamstime.com%2Fillustrazione-di-stock-illustrazione-del-disco-di-vinile-con-le-note-di-musica-image89449937&psig=AOvVaw2cfES8rt-7W30fJY9wXZtK&ust=1675192349365000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJDLy___7_wCFQAAAAAdAAAAABAI"
+      "imageUrl": "https://tse4.mm.bing.net/th?id=OIP.8ibUyF-NHFStWflKlCDISQHaEL&pid=Api&P=0"
     },
     {
       "id": 24,
-      "name": "Quibusdam",
+      "name": "TENNIS bracialet",
       "price": 2090,
       "categoryId": 4,
       "rate": 4.21,
@@ -305,7 +305,7 @@
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdWY5ag9lZyb8WXJqhy-GgnG2aASawQjZ19g&usqp=CAU"
     },
     {
-      "name": "Tennis",
+      "name": "diamond bracialet \"tennis\"",
       "description": "tennis diamonds 1car",
       "price": "2150",
       "rate": 4.5,
@@ -345,7 +345,7 @@
       "id": 29
     },
     {
-      "name": "vinile",
+      "name": "vinyl led zeppelin",
       "price": "26",
       "categoryId": "2",
       "rate": "",
@@ -355,7 +355,7 @@
       "id": 30
     },
     {
-      "name": "anello",
+      "name": "red gold ring and diamonds",
       "price": "1140",
       "categoryId": "4",
       "rate": "",

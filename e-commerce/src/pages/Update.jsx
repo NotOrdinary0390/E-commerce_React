@@ -25,16 +25,7 @@ export default function Update() {
       //console.log(product)
     }
   }, []);
-  //console.log(selectedProduct)
-
-  // useEffect(() => {
-  //   if (detailProduct && detailProduct.id) {
-  //     axios.get(`http://localhost:3000/products/${detailProduct.id}`)
-  //       .then(response => {
-  //         setDetailProduct(response.data);
-  //       });
-  //   }
-  // }, [detailProduct]);
+ 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
